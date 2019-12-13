@@ -375,11 +375,15 @@ Monitor your production applications with [Keymetrics](https://keymetrics.io/).
 
 Install the latest pm2 version:
 
+최신 pm2 를 설치 하세요
+
 ```bash
 npm install pm2@latest -g
 ```
 
 Then update the in-memory PM2 :
+
+그리고 메모리 에  PM2를 업데이트하십시오
 
 ```bash
 pm2 update
@@ -390,17 +394,25 @@ pm2 update
 
 PM2 empowers your process management workflow. It allows you to fine-tune the behavior, options, environment variables, logs files of each application via a process file. It's particularly useful for micro-service based applications.
 
+PM2는 프로세스 관리 워크 플로우를 강화합니다. 프로세스 파일을 통해 각 응용 프로그램의 동작, 옵션, 환경 변수, 로그 파일을 미세 조정할 수 있습니다. 마이크로 서비스 기반 응용 프로그램에 특히 유용합니다. 
+
 Configuration format supported are Javascript, JSON and YAML.
+
+지원되는 구성 형식은 Javascript, JSON 및 YAML입니다.
 
 ## Generate configuration
 
 To generate a sample process file you can type this command:
+
+샘플 프로세스 파일을 생성하려면 다음 명령을 입력하십시오.
 
 ```
 pm2 ecosystem
 ```
 
 This will generate a sample `ecosystem.config.js`:
+
+샘플파일 `ecosystem.config.js` 이 생성됩니다.
 
 ```javascript
 module.exports = {
@@ -418,6 +430,8 @@ module.exports = {
 ```
 
 Once edited at your convenience you can start/restart/stop/delete this file via CLI:
+
+언제라도 CLI를 통해 이 파일을 시작 / 재시작 / 중지 / 삭제할 수 있습니다.
 
 ```bash
 $ pm2 [start|restart|stop|delete] ecosystem.config.js
